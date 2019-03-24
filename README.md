@@ -1,3 +1,3 @@
 # wai-aria-template
 
-> The minimum wai-aria in parcel.
+> A minimum wai-aria with parcel.
