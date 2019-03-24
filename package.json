@@ -1,0 +1,16 @@
+{
+  "name": "wai-aria-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.5.0",
+    "cssnano": "^4.1.10",
+    "postcss-modules": "^1.4.1",
+    "sass": "^1.17.3"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

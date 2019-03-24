@@ -1,0 +1,15 @@
+.tabContainer {
+  [role="tab"] {
+    color: blue;
+    &[aria-selected="true"] {
+      color: red;
+    }
+  }
+
+  [role="tabpanel"] {
+    display: none;
+    &[aria-hidden="false"] {
+      display: block;
+    }
+  }
+}

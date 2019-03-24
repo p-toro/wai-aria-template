@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The minimum wai-aria in parcel.</title>
+</head>
+<body>
+  <header role="banner">header</header>
+  <nav role="navigation">
+    <ol>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+    </ol>
+  </nav>
+  <main role="main">
+    <div class="tabContainer">
+      <ol role="tablist">
+        <li id="tabList01" aria-controls="tab01" aria-selected="true" role="tab">tab01</li>
+        <li id="tabList02" aria-controls="tab02" aria-selected="false" role="tab">tab02</li>
+        <li id="tabList03" aria-controls="tab03" aria-selected="false" role="tab">tab03</li>
+      </ol>
+      <p id="tab01" aria-hidden="false" aria-labelledby="tabList01" role="tabpanel">text01</p>
+      <p id="tab02" aria-hidden="true" aria-labelledby="tabList02" role="tabpanel">text02</p>
+      <p id="tab03" aria-hidden="true" aria-labelledby="tabList03" role="tabpanel">text03</p>
+    </div>
+  </main>
+  <aside role="complementary">aside</aside>
+  <footer role="contentinfo">footer</footer>
+  <script src="./index.js"></script>
+</body>
+</html>
+
