@@ -2,8 +2,7 @@
 import './main.scss';
 import $ from 'jquery';
 
-export default () => {
-
+const changeTab = ()=> {
   $(function () {
     const $tab = $('[role="tab"]'),
     $tabpanel = $('[role="tabpanel"]');
@@ -24,6 +23,9 @@ export default () => {
       $visibleTabPanel.attr('aria-hidden', false);
     });
   });
+}
 
+export default () => {
+  changeTab();
 }
 
