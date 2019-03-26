@@ -2,16 +2,16 @@
 import './main.scss';
 import $ from 'jquery';
 
-const changeTab = ()=> {
-  $(function () {
+const changeTab = () => {
+  $(function() {
     const $tab = $('[role="tab"]'),
-    $tabpanel = $('[role="tabpanel"]');
+      $tabpanel = $('[role="tabpanel"]');
 
     $tab.on('click', function() {
       const $this = $(this),
-      thisSelected = $this.attr('aria-selected'),
-      thisControls = $this.attr('aria-controls'),
-      $visibleTabPanel = $('#' + thisControls);
+        thisSelected = $this.attr('aria-selected'),
+        thisControls = $this.attr('aria-controls'),
+        $visibleTabPanel = $('#' + thisControls);
 
       if (thisSelected === 'true') {
         return;
@@ -23,9 +23,8 @@ const changeTab = ()=> {
       $visibleTabPanel.attr('aria-hidden', false);
     });
   });
-}
+};
 
 export default () => {
   changeTab();
-}
-
+};
